@@ -7,7 +7,7 @@
 
 /* COMMON */
 html {
-font-family: 'Whitney', sans-serif;
+    font-family: 'Whitney', sans-serif;
 }
 
 .flex-container {
@@ -39,7 +39,7 @@ a {
 
 /* UTILITY */
 .bg-gray {
-    background-color: lightgray;
+    background-color: ##F6F6F6;
 }
 
 .bg-btn {
@@ -47,7 +47,12 @@ a {
     color: white;
 }
 
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
 h1 {
     font-size: 3rem;
@@ -64,13 +69,13 @@ h1 {
 
 .h_menu li {
     display: inline-block;
+    margin-left: 20px;
 }
 
 .h_menu {
     flex-grow: 1;
     text-align: center;
     padding: 5px 0;
-    word-spacing: 1rem;
 }
 
 .h_logo, .h_login {
@@ -83,7 +88,7 @@ h1 {
 }
 
 .jumbotron {
-    height: 500px;
+    height: 600px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
     align-items: center;
@@ -111,21 +116,45 @@ h1 {
     padding: 1em 1em;
     margin: 10px;
 }
+
 /* MAIN */
 section {
     padding: 1em 0;
 }
 
-.dock-right {
-    width: 60%;
-    height: 400px;
-    background-color: lightblue;
+.dock-left {
+    width: 65%;
 }
 
-.dock-left {
-    width: 40%;
-    height: 400px;
-    background-color: pink;
+.dock-left img {
+    width: 100%;
+}
+
+.dock-right {
+    width: 35%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.dock-right h2 {
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+}
+
+.text-centered {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.text-centered h2 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+.big-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* FOOTER */
@@ -146,7 +175,6 @@ footer {
     /* DEBUG */
     background-color: lightgreen;
     height: 300px;
-
 }
 
 .f_menu-col{
