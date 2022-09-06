@@ -159,33 +159,66 @@ section {
 
 /* FOOTER */
 footer {
-    background-color: black;
+    background-color: #23272A;
 }
 
 .sidebar {
-    width: 30%;
-    /* DEBUG */
-    background-color: salmon;
-    height: 300px;
+    padding: 30px;
+    width: 25%;
+}
+
+.sidebar span {
+    color: #4565BD;
+    font-size: 1.5rem;
+}
+
+.sidebar img {
+    width: 10%;
+}
+
+.sidebar .lang {
+    margin-top: 10px;
+    color: white;
+}
+
+.f_social {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.2rem;
+    word-spacing: 10px;
 }
 
 .f_menu {
     display: flex;
-    width: 70%;
-    /* DEBUG */
-    background-color: lightgreen;
-    height: 300px;
+    width: 75%;
 }
 
-.f_menu-col{
+.f_menu-col {
     width: calc(100% /4);
-    border: 1px dashed white;
+    color: white;
+    padding: 30px;
+}
+
+.f_menu-col span {
+    color: #4565BD;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 10px;
 }
 
 .footer-bottom .container {
     border-top: 1px solid white;
-    margin-top: 20px;
+    padding: 20px 0 20px 0;
     justify-content: space-between;
-    background-color: aquamarine;
+}
+
+.footer-bottom a.btn {
+    background-color: #4565BD;
+    color: white;
 }
 
