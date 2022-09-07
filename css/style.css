@@ -170,11 +170,21 @@ img.reverse {
 
 .star {
     background-image: url(../img/stars.svg);
-
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    margin: 2em auto 0px;
+    padding: 1.5em 0px;
 }
 
 .txt-btn {
-    width: 50%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.txt-btn .btn {
+    background-color: #4565BD;
+    color: white;
 }
 
 /* FOOTER */
