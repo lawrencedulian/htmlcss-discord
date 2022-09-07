@@ -14,6 +14,10 @@ html {
     display: flex;
 }
 
+img {
+    max-width: 100%;
+}
+
 ul {
     list-style-type: none;
 }
@@ -35,11 +39,12 @@ a {
     color: black;
     padding: .5em 1em;
     border-radius: 30px;
+
 }
 
 /* UTILITY */
 .bg-gray {
-    background-color: ##F6F6F6;
+    background-color: #F6F6F6;
 }
 
 .bg-btn {
@@ -60,9 +65,9 @@ h1 {
     color: white;
 }
 
+
 /* HEADER */
 .header-top {
-    height: 60px;
     padding: 1em 0;
     background-color: #255EE9;
 }
@@ -79,23 +84,26 @@ h1 {
 }
 
 .h_logo, .h_login {
-    width: 20%;
+    display: flex;
+    justify-content: center;
+    width: 20%;        
 }
 
 .h_login {
     text-align: right;
-    padding: 5px;
+    display: flex;
+    align-items:  center;
 }
 
 .jumbotron {
-    height: 600px;
     background-image: url(../img/jumbo.png);
     background-size: cover;
+    height: 500px;
     align-items: center;
 }
 
 .header-bottom {
-    width: 55%;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
 }
@@ -108,32 +116,36 @@ h1 {
 .btn_jumbotron {
     padding-top: 50px;
 }
-.btn_jumbotron li{
+
+.btn_jumbotron li {
     display: inline-block;
+    padding: 10px;
 }
 
 .btn_jumbotron .btn {
     padding: 1em 1em;
-    margin: 10px;
 }
 
 /* MAIN */
 section {
-    padding: 1em 0;
+    padding: 30px;
+}
+
+img.wave {
+    display: block;
+}
+
+img.reverse {
+    transform: rotateX(180deg);
 }
 
 .dock-left {
-    width: 65%;
-}
-
-.dock-left img {
-    width: 100%;
+    width: 60%;
 }
 
 .dock-right {
-    width: 35%;
-    padding-top: 20px;
-    padding-left: 20px;
+    width: 40%;
+    padding: 25px;
 }
 
 .dock-right h2 {
@@ -152,9 +164,17 @@ section {
 }
 
 .big-image {
-    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.star {
+    background-image: url(../img/stars.svg);
+
+}
+
+.txt-btn {
+    width: 50%;
 }
 
 /* FOOTER */
@@ -167,7 +187,7 @@ footer {
     width: 25%;
 }
 
-.sidebar span {
+.sidebar h4 {
     color: #4565BD;
     font-size: 1.5rem;
 }
@@ -199,7 +219,7 @@ footer {
     padding: 30px;
 }
 
-.f_menu-col span {
+.f_menu-col h4 {
     color: #4565BD;
 }
 
